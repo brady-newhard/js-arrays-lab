@@ -42,10 +42,7 @@ Exercise 4: Access an array element
 2) Assign it to a variable called `favFood`.
 
 Complete Exercise 4 in the space below:
-*/
-
-//const pizzaIdx = foods.indexOf("pizza");
-//const favFood = foods[pizzaIdx];  
+*/ 
 
 const favFood = (foods[1]);   
     console.log('Exercise 4 result:', favFood);
@@ -145,6 +142,7 @@ Complete Exercise 11 in the space below:
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 const odds = [];
+
 nums.forEach((element) => {
     if (element % 2 === 1) {
     odds.push(element);}
@@ -240,16 +238,13 @@ Complete Exercise 15 in the space below:
 */
 
 let total = 0 ;
-numArrays.forEach(subArray => {
-    subArray.forEach(num => {
+numArrays.forEach(element => {
+    element.forEach(num => {
         total += num;
     });
 });
     console.log('Exercise 15 result:\n', total);
 
-    //numArrays.forEach((element) => {
-//total =+element;
-    
   // sum will not be retained between iterations and will not 
   // be available outside of the callback function
 //});
