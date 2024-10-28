@@ -175,12 +175,12 @@ const buzz = [];
 const fizzbuzz = [];
 
 nums.forEach((element) => {
+    if (element % 3 === 0 && element % 5 === 0)
+        fizzbuzz.push(element);
     if (element % 3 === 0) 
         fizz.push(element);
     if (element % 5 === 0)
         buzz.push(element);
-    if (element % 3 === 0 && element % 5 === 0)
-        fizzbuzz.push(element);
     }
 );
 
